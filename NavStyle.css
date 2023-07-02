@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+  background-image: url(Dashboad.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.hello{
+  margin-top: 3.5cm;
+}
+
+.description{
+  padding-left: 3cm;
+  padding-right: 3cm;
+  color: white;
+  margin-top: 1cm;
+}
+
+.tagline{
+  padding-left: 3cm;
+  color: white;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+  padding-right:100px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 50px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.topnav .login-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: -360px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    border: none;
+    width: 100px;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+
+
+
+footer{
+  position: absolute;
+  bottom: -800;
+  right: 0;
+  left: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "open sans";
+  padding-top: 40px;
+  color: #fff;
+  transform: translate(0cm, 4cm);
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transforms: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+     max-width: 500px;
+     margin: 10px auto;
+     line-height: 28px;
+     font-size: 14px;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+  .socials a:hover i{
+    color: aqua;
+  }
+  .footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+
+
+
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+   }
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   /* CSS which you need for blurred box */
+
+   
+   .blurred-box{
+    position: relative;
+    width: 200px;
+    height: 260px;
+    top: calc(50% - 175px);
+    left: calc(50% - 125px);
+    background: inherit;
+    border-radius: 9px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+     transform: translate(17cm, -1.1cm);
+   } 
+   /* Form which you dont need */
+   .user-login-box{
+     position: relative;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+   }
+   .user-login-box > *{
+     display: inline-block;
+     width: 200px;
+   }
+   
+   .user-icon{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     border-radius: 50%;
+     background-size: contain;
+     background-image: url(kaapy.jpg);
+     transform: translate(0.1cm , 0.3cm);
+   }
+   
+   .user-name{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: white;
+   }
+   .button{
+     width:100px;
+     height:25px;
+   }
+   
+   input.user-password{
+     width: 120px;
+     height: 18px;
+     opacity: 0.4;
+     border-radius: 2px;
+     padding: 5px 15px;
+     border: 0;
+   }
+
+
+
+
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   /* CSS which you need for blurred box */
+
+   
+   .blurred-box1{
+     position: relative;
+     width: 200px;
+     height: 260px;
+     top: calc(50% - 175px);
+     left: calc(50% - 125px);
+     background: inherit;
+     border-radius: 9px;
+     overflow: hidden;
+     transform: translate(9cm, -8cm);
+   } 
+   /* Form which you dont need */
+   .user-login-box1{
+     position: relative;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+   }
+   .user-login-box1 > *{
+     display: inline-block;
+     width: 200px;
+   }
+   
+   .user-icon1{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     border-radius: 50%;
+     background-size: contain;
+     background-image: url(kaapy.jpg);
+     transform: translate(0cm , 0.2cm);
+   }
+   
+   .user-name1{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: white;
+   }
+   .button1{
+     width:100px;
+     height:25px;
+   }
+   
+   input.user-password1{
+     width: 120px;
+     height: 18px;
+     opacity: 0.4;
+     border-radius: 2px;
+     padding: 5px 15px;
+     border: 0;
+   }
+
+
+
+
+
+
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   /* CSS which you need for blurred box */
+
+   
+   .blurred-box2{
+     position: relative;
+     width: 200px;
+     height: 260px;
+     top: calc(50% - 175px);
+     left: calc(50% - 125px);
+     background: inherit;
+     border-radius: 9px;
+     overflow: hidden;
+     transform: translate(1cm, -15.0cm);
+   } 
+   /* Form which you dont need */
+   .user-login-box2{
+     position: relative;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+   }
+   .user-login-box2 > *{
+     display: inline-block;
+     width: 200px;
+   }
+   
+   .user-icon2{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     border-radius: 50%;
+     background-size: contain;
+     background-image: url(kaapy.jpg);
+     transform: translate(0cm , 0.2cm);
+   }
+   
+   .user-name2{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: white;
+   }
+   .button2{
+     width:100px;
+     height:25px;
+   }
+   
+   input.user-password2{
+     width: 120px;
+     height: 18px;
+     opacity: 0.4;
+     border-radius: 2px;
+     padding: 5px 15px;
+     border: 0;
+   }
+
+
+
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   /* CSS which you need for blurred box */
+
+   
+   .blurred-box3{
+     position: relative;
+     width: 200px;
+     height: 260px;
+     top: calc(50% - 175px);
+     left: calc(50% - 125px);
+     background: inherit;
+     border-radius: 9px;
+     overflow: hidden;
+     transform: translate(-7.3cm, -21.8cm);
+   } 
+   /* Form which you dont need */
+   .user-login-box3{
+     position: relative;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+   }
+   .user-login-box3 > *{
+     display: inline-block;
+     width: 200px;
+   }
+   
+   .user-icon3{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     border-radius: 50%;
+     background-size: contain;
+     background-image: url(kaapy.jpg);
+     transform: translate(0cm , 0.2cm);
+   }
+   
+   .user-name3{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: white;
+   }
+   .button3{
+     width:100px;
+     height:25px;
+   }
+   
+   input.user-password3{
+     width: 120px;
+     height: 18px;
+     opacity: 0.4;
+     border-radius: 2px;
+     padding: 5px 15px;
+     border: 0;
+   }
+
+
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   
+   /* CSS which you need for blurred box */
+
+   
+   .blurred-box4{
+     position: relative;
+     width: 200px;
+     height: 260px;
+     top: calc(50% - 175px);
+     left: calc(50% - 125px);
+     background: inherit;
+     border-radius: 9px;
+     overflow: hidden;
+     transform: translate(-16cm, -28.8cm);
+   } 
+   /* Form which you dont need */
+   .user-login-box4{
+     position: relative;
+     margin-top: 50px;
+     text-align: center;
+     z-index: 1;
+   }
+   .user-login-box4 > *{
+     display: inline-block;
+     width: 200px;
+   }
+   
+   .user-icon4{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     border-radius: 50%;
+     background-size: contain;
+     background-image: url(kaapy.jpg);
+     transform: translate(0cm , 0.2cm);
+   }
+   
+   .user-name4{
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: white;
+   }
+     .button4 {
+      width : 100px;
+      height: 25px;
+     }
+   
+   input.user-password4{
+     width: 120px;
+     height: 18px;
+     opacity: 0.4;
+     border-radius: 2px;
+     padding: 5px 15px;
+     border: 0;
+   }
+
+
+
+   
+.hello{
+  text-align: center;
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-play-state: running;
+  color: black;
+ 
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.description {
+  text-align: center;
+  animation-name: slideup;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-play-state: running;
+  color: black;
+    
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+h3{
+  font-family: 'Dancing Script', cursive;
+  color: rgb(138, 79, 13);
+}
+
+.hello{
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+.description{
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+q{
+  font-family: 'Dancing Script', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: left;
+  font-weight: 300;
+  transform: translate(0cm , 10cm);
+}
+
+.primary-button {
+  font-family: 'Ropa Sans', sans-serif;
+     /* font-family: 'Valorant', sans-serif; */
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  
+  padding: 0.8rem 2.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #d6761b;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+  transform: translate(0cm, 2cm);
+ }
+
+ 
+ .primary-button:hover {
+  border: 1px solid #FF4655;
+  color: white;
+  background-position: 40%;
+ }
+ 
+ .primary-button:before {
+  content: "";
+  position: absolute;
+  background-color: #0E1822;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -1px;
+  left: -1px;
+  transition: background-color 0.15s ease-in-out;
+ }
+ 
+
+ .primary-button:after {
+  content: "";
+  position: absolute;
+  background-color: #FF4655;
+  width: 0.3rem;
+  height: 0.3rem;
+  bottom: -1px;
+  right: -1px;
+  transition: background-color 0.15s ease-in-out;
+ }
+ 
+ .button-borders {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+ 
+ }
+ 
+ 
+.topnav .toggle-btn{
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 1.5rem;
+  display: none;
+  font-family: 'Dancing Script', cursive;
+}
+
+.dropdown_menu{
+  display: none;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 10px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+  transition: height 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu a{
+  color: #FFFFFF;
+}
+
+.dropdown_menu.open{
+  height: 200px;
+}
+
+
+@media(max-width:800px){
+  .topnav a{
+    display: none;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .topnav .toggle-btn{
+    display: block;
+  }
+
+  .dropdown_menu{
+    display: block;
+  }
+
+  .dropdown_menu a:hover {
+    background-color: #ccc;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  
+   
+
+
+
+
+  .dropdown_menu.open ~ .glass-panel {
+    top: 100%;
+    height: calc(100% - 60px); /* Adjust the value based on the height of the menu */
+  }
+}
+
+@media(max-width:576px){
+  .dropdown_menu{
+    right: 2rem;
+    width: unset;
+  }
+
+
+}
+

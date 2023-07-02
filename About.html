@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <link rel="stylesheet" href="AboutStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topnav">
+    <div class="toggle-btn">
+      <i class="fa-solid fa-bars"></i>       
+    </div>   
+    <a  id = "nav1" >Home</a>
+    <a  id = "nav2" >Menu</a>
+    <a  id = "nav3" >contact</a>
+    <a  id = "nav4" >Feedback</a>
+  </div>
+  
+
+  <div class="dropdown_menu">
+    <li><a  id = "nav1" >Home</a></li>
+    <li><a  id = "nav2" >Menu</a></li>
+    <li><a  id = "nav3" >contact</a></li>
+    <li><a  id = "nav4" >Feedback</a></li>
+  </div> 
+
+    <div style="padding-left:16px">     
+        </div>
+        <div class="glass-panel"> 
+        <div>
+            <form><h1>About Us</h1>
+                <div class="form-group">
+                    <br>
+                    <p style="color:white;">Welcome to Paleo Excelsior, where passion for healthy living meets the indulgence of gourmet delights. We pride ourselves on being more than just a café; 
+                         we are a destination for those seeking a nourishing and satisfying experience. Drawing inspiration from the popular Paleo lifestyle and the warm ambiance of Starbucks,
+                         we have crafted a unique space that caters to both body and soul.
+                        <br><br>
+                        Whether you're stopping by for a quick pick-me-up, catching up with friends, or seeking a quiet moment of self-care, Paleo Excelsior is the place to be. Join us on a journey of
+                        wellness and indulgence, where every sip and every bite is a celebration of a life well-lived. Welcome to Paleo Excelsior, where health and flavor go hand in hand.
+                        <br><br>
+                    </p>
+                  </div>
+
+            </form>
+        </div>
+        </div>
+        <div>
+        <footer>
+            <div class="footer-content">
+             <h3>Paleo Excelsior</h3>
+             <p>Welcome to Paleo Excelsior, where we blend the ancient wisdom of the Paleolithic era with the modern allure of a beloved 
+              coffeehouse. Indulge in our meticulously crafted beverages and experience the perfect fusion of ancestral nourishment and 
+              contemporary delight.</p>
+             <ul class="socials">
+               <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+             </ul>
+           </div>
+         </footer>
+        </div>
+        <script>
+          const toggleBtn=document.querySelector('.toggle-btn')
+          const toggleBtnIcon=document.querySelector('.toggle-btn i')
+          const dropDownMenu=document.querySelector('.dropdown_menu')
+    
+          toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen =dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList=isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+          }
+        </script>
+        <script src="About.js"></script>
+    </body>
+</html>

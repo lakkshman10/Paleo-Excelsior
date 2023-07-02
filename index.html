@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <div class="back">
+    <a href="NavigationBar.html" class="back-button"><i class='fas fa-angle-double-left' style='font-size:24px;color:black'>&nbsp;HOME</i></a>
+    </div>
+<div class="glass-panel"> 
+    <form class="form" id="userForm">
+        <p class="title">Register </p>
+        <p class="message"  style="color: blanchedalmond;">Signup now and get full access to our app. </p>
+        <br>
+            
+            <label>
+                <input required="" placeholder="" type="text" class="input"  id="username" name="username">
+                <span>Username</span>
+            </label>
+
+            <br> 
+        <label>
+            <input required="" placeholder="" type="email" class="input" id="email" name="email">
+            <span>Email</span>
+        </label> 
+            <br>
+        <label>
+            <input required="" placeholder="" type="text" class="input"  id="phone" name="phone" >
+            <span>Phone Number</span>
+        </label>
+        <br>
+        <label>
+            <input required="" placeholder="" type="password" class="input" id="password" name="password">
+            <span>password</span>
+        </label>
+        <br>
+        <div class="button-borders">
+            <button class="primary-button" id="menu"> Register
+            </button>
+        </div>
+        <br>
+       
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

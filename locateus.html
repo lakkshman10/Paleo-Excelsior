@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate Us</title>
+    <link rel="stylesheet" href="locateus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <section class="header">
+        <div class="header_logo">
+          <div class="topnav">
+            <div class="toggle-btn">
+             
+              Paleo Excelsior
+        </div>
+      </div>
+    </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="navigation-bar-items">
+            <a  id="nav1"><li id="nav1">Home</li></a>
+            <a id="nav2"><li id="nav2">About-Us</li></a>
+            <a  id="nav3"><li id="nav3">Menu</li></a>
+            <a  id="nav4 ><li id="nav4">Feedback</li></a>
+            
+        </ul>
+    </section>
+    <section class="section-1">
+        <h1>Locate Us</h1>
+        <div class="cards">
+            <div class="card-4">
+                <p><iframe src="https://www.google.com/maps/d/embed?mid=1oaGDQe6ZeIjUkKCh1kldoJkylc1zZA0&hl=en&ehbc=2E312F" width="600" height="480"></iframe></p>
+                <div class="content">
+                    <!--<p>Pheonix Market City <br> 142, Velachery Rd, Indira Gandhi Nagar, Velachery, Chennai, Tamil Nadu 600042<br>Timing: 10am - 10pm</p>-->
+                    <h4>Pheonix Market city</h4>
+                    <p><span class="address">Address: </span> <span>142, Velachery Rd, Indira Gandhi Nagar, Velachery, Chennai, Tamil Nadu 600042</span></p>
+                    <p><span class="address">Timings: </span> <span> 11:00AM - 11:00PM</span></p>
+                    <a href="https://www.google.com/maps/d/embed?mid=1oaGDQe6ZeIjUkKCh1kldoJkylc1zZA0&hl=en&ehbc=2E312F" target="_blank">Get Directions</a>
+                </div>
+            </div>
+            <footer>
+              <div class="footer-content">
+               <h3>Paleo Excelsior</h3>
+               <p>Welcome to Paleo Excelsior, where we blend the ancient wisdom of the Paleolithic era with the modern allure of a beloved 
+                coffeehouse. Indulge in our meticulously crafted beverages and experience the perfect fusion of ancestral nourishment and 
+                contemporary delight.</p>
+               <ul class="socials">
+                 <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+               </ul>
+              </div>
+           </footer>
+           <script>
+            const toggleBtn=document.querySelector('.toggle-btn')
+            const toggleBtnIcon=document.querySelector('.toggle-btn i')
+            const dropDownMenu=document.querySelector('.dropdown_menu')
+      
+            toggleBtn.onclick = function(){
+              dropDownMenu.classList.toggle('open')
+              const isOpen =dropDownMenu.classList.contains('open')
+  
+              toggleBtnIcon.classList=isOpen
+              ?'fa-solid fa-xmark'
+              :'fa-solid fa-bars'
+            }
+          </script>
+</body>
+<script src="locateus.js"></script>
+</html>

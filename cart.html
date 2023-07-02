@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>cart</title>
+</head>
+<body>
+    <header>
+        <h1>Paleo Excelsior</h1>
+    </header>
+    <label id="checkout-lable"></label>
+    <main>
+        <div class="order-info">
+            <h4>Order Summary</h4>
+            <div class="items-price">
+                <span id="item-count-lable">items(2):</span>
+                <span id="item-price">₹900</span>
+            </div>
+            <div class="delivery-charge">
+                <span id="delivery-charge-lable">delivery charge:</span>
+                <span id="delivery-charge">0</span>
+            </div>
+            <div class="tax">
+                <span id="tax-lable">Tax(5%):</span>
+                <span id="tax-amount">₹48</span>
+            </div>
+            <hr id="line">
+            <div class="total">
+                <span id="total-amount-lable">Total:</span>
+                <span id="total-amount">₹988</span>
+            </div>
+            <div id="paypal-buttons"></div>
+        </div>
+        <div class="noItems">
+            <span>Your cart is empty</span>
+            <button
+            onclick="window.location.href='menu.html'" 
+            id="return-to-menu">Return to Menu</button>
+        </div>
+        <div class="cart-items js-cart-items">
+        </div>
+    </main>
+    <script src="https://www.paypal.com/sdk/js?client-id=AaVgHFAVcniWH00CWmeDFFUymt9I6sMVmMBmaRiFLz0hyeRbERmYTQADY5kpX-av9ushv8_cAwqcPy2l"></script>
+</body>
+<script src="cart.js"></script>
+</html>
