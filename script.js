@@ -29,5 +29,5 @@ const nav1 =  document.querySelector("#menu");
 
 nav1.addEventListener('click' , function() {
     window.location.href = "navigationbar.html";
-
+   
 });

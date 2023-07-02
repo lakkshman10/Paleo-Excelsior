@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the form */
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #6CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<form action="thankyou.html" method="post">
+<h1> Register Form for food Survey </h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+      
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+     	
+<label for="gender">Gender:</label>
+<input type="radio" id="gender" name="gender" value="male" required>Male</input>
+<input type="radio" id="gender" name="gender" value="female" required>Female</input>
+      
+ <table>
+   <tr>
+     <td>
+       <label for="AGe">Age:</label>
+        <input type="Number" id="number" name="nuber" required>
+     </td>
+   </tr>
+   </table>
+      
+      <label for="Food">Select your favourite Food</label>
+      
+<select name="food" id="food">
+<option value="Pizza">pizza</option>
+<option value="Burger">Burger</option>
+<option value="pasta">pasta</option>
+<option value="Noodles">Noodles</option>
+<option value="Noodles">Fried Rice</option>
+<option value=""></option>
+</select>
+
+
+
+    <label for="message">About your favourite Food:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+     
+  </form>
+</body>
+</html>
